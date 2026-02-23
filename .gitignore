@@ -1,0 +1,14 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.log
+
+# Local OAuth credentials
+oauth.settings.json
+
+# Runtime error artifacts
+app_errors.log
+build_errors.txt
+run_error.txt

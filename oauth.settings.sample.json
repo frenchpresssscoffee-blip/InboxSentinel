@@ -1,0 +1,25 @@
+{
+  "providers": {
+    "Gmail": {
+      "clientId": "YOUR_GOOGLE_DESKTOP_CLIENT_ID",
+      "clientSecret": "",
+      "authorizationEndpoint": "https://accounts.google.com/o/oauth2/v2/auth",
+      "tokenEndpoint": "https://oauth2.googleapis.com/token",
+      "scope": "openid email https://mail.google.com/",
+      "additionalAuthorizationParameters": {
+        "access_type": "offline",
+        "prompt": "consent"
+      }
+    },
+    "Outlook": {
+      "clientId": "YOUR_MICROSOFT_APP_CLIENT_ID",
+      "clientSecret": "",
+      "authorizationEndpoint": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
+      "tokenEndpoint": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+      "scope": "openid email offline_access https://outlook.office.com/IMAP.AccessAsUser.All",
+      "additionalAuthorizationParameters": {
+        "prompt": "select_account"
+      }
+    }
+  }
+}
